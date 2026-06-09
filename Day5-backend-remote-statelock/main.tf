@@ -13,10 +13,18 @@ resource "aws_subnet" "name" {
         Name = "Terraform-0900AM"
     }
 }
+<<<<<<< Updated upstream
 resource "aws_subnet" "name2" {
   vpc_id     = aws_vpc.name.id
     cidr_block = "10.0.0.64/26"
     tags = {
         Name = "Subnet2"
+=======
+resource "aws_subnet" "name3" {
+  vpc_id     = aws_vpc.name.id
+    cidr_block = "10.0.0.128/26"
+    tags = {
+        Name = "Subnet3"
+>>>>>>> Stashed changes
     }
 }
